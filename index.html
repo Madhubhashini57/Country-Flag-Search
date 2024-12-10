@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country Search</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Country Info Finder</h1>
+    <p>Search for any country and get its details!</p>
+  </header>
+
+  <main>
+    <section class="search-bar">
+      <input type="text" id="countryInput" placeholder="Enter country name" />
+      <button id="searchBtn">Search</button>
+    </section>
+
+    <section id="countryDetails" class="details-container">
+      <article id="details" class="hidden">
+        <img id="countryFlag" alt="Country Flag" />
+        <div>
+          <h2 id="countryName"></h2>
+          <p><strong>Capital:</strong> <span id="capital"></span></p>
+          <p><strong>Region:</strong> <span id="region"></span></p>
+          <p><strong>Population:</strong> <span id="population"></span></p>
+          <a id="googleMapsLink" href="#" target="_blank">View on Google Maps</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created by Imesha - Powered by REST Countries API</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
